@@ -69,4 +69,74 @@ LETTER SPACING
     --font-family-pri: 'Stardom', sans-serif;
     --font-family-sec: 'Teko', sans-serif;
 
+    /* colors */
+    --primary-base: #D7263D;
+    --secondary-base: #02182B;
+    --tertiary-base: #FFFFE7;
+    --white-shades-seashell: #FFF5EE;
+    --white-shades-heat: #FDF9EF;
+    --white-shades-spatial: #DEDDDB;
+    --white-shades-antique: #FAEBD7;
+    --white-shades-pacific: #E8EAE6;
+    --black-shades-ink: #212122;
+    --black-shades-tech: #0D0E0E;
+    --black-shades-premium: #100E09;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;  /* 10px / 16px = 62.5% */
+}
+
+body {
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+    font-size: var(--text-h1);
+}
+
+h2 {
+    font-size: var(--text-h2);
+}
+
+h3 {
+    font-size: var(--text-h3);
+}
+
+h4 {
+    font-size: var(--text-h4);
+}
+
+h5 {
+    font-size: var(--text-h5);
+}
+
+p {
+    font-size: var(--text-para);
+}
+
+a {
+    font-size: var(--text-base);
+    text-decoration: none;
+    display: inline-block;  /* subjected to change */
+}
+
+.main-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
