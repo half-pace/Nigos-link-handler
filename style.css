@@ -70,7 +70,7 @@ LETTER SPACING
     --font-family-sec: 'Teko', sans-serif;
 
     /* colors */
-    --primary-base: #D7263D;
+    --primary-base: #D7263D; /* 970B2D / D7263D */
     --secondary-base: #02182B;
     --tertiary-base: #FFFFE7;
     --white-shades-seashell: #FFF5EE;
@@ -96,6 +96,7 @@ html {
 body {
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-normal);
+    background-color: var(--primary-base);
 }
 
 h1, h2, h3, h4, h5 {
