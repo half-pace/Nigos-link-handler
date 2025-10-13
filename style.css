@@ -1,0 +1,72 @@
+/* 
+
+========================== Styles ==========================
+
+================== Colors ==================
+Primary Color: #D7263D
+Secondary Color: #02182B
+Tertiary Color: #FFFFE7
+
+White Optional Shades
+Seashell: #FFF5EE
+White Heat: #FDF9EF
+Spatial White: #DEDDDB
+Antique White: #FAEBD7
+Pacific Pearl: #E8EAE6
+
+Black Optional Shades
+Ink Black: #212122
+Tech Black: #0D0E0E
+Premium Black: #100E09
+
+================== Typography ==================
+Font Family: Stardom and Teko 
+font-family: 'Stardom', sans-serif;
+font-family: 'Teko', sans-serif;
+
+FONT SIZES
+12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px
+
+FONT WEIGHTS
+400 / 700
+
+LINE HEIGHTS
+1.2 / 1.5
+
+LETTER SPACING
+0 / -2px
+
+================== Border Radius ==================
+4px / 8px / 20px
+
+*/
+
+/* ================================== Global Styles ================================== */
+
+:root {
+    /* Font size */
+    --text-sm: 1.2rem;
+    --text-base: 1.6rem;
+    --text-para: 2rem;
+    --text-h1: 6.2rem;
+    --text-h2: 4.8rem;
+    --text-h3: 4rem;
+    --text-h4: 3.2rem;
+    --text-h5: 2.4rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* line heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+
+    /* letter spacing */
+    --letter-spacing-tight: -2px;
+
+    /* font family */
+    --font-family-pri: 'Stardom', sans-serif;
+    --font-family-sec: 'Teko', sans-serif;
+
+}
