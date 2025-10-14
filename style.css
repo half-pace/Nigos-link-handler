@@ -137,6 +137,8 @@ a {
     font-size: var(--text-base);
     text-decoration: none;
     display: inline-block;  /* subjected to change */
+    font-family: var(--font-family-pri);
+    font-weight: var(--font-weight-bold);
 }
 
 /* ================================== Components ================================== */
@@ -232,8 +234,35 @@ a {
     color: var(--secondary-base);
 }
 
-.bio-wrapper .link-wrapper {
+.content-wrapper .link-wrapper {
     background-color: green;
     width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 2rem;
+}
+
+.link-wrapper .short-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 4rem;
+}
+
+.link-wrapper .short-links .short-btn {
+    cursor: pointer;
+    /* height: 100%; */
+    padding: 0.3rem 2rem;
+    /* margin: 0 1rem; */
+}
+
+.link-wrapper .large-links {
+    
 }
 
