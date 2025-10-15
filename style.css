@@ -103,11 +103,12 @@ body {
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-normal);
     /* background-color: var(--primary-base); */
-    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg");
+    /* background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
+    transition: background 1s ease-in-out;
 }
 
 h1, h2, h3, h4 {
@@ -157,6 +158,135 @@ a {
 }
 
 /* ================================== Components ================================== */
+
+.gradient1 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient2 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient3 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient4 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient5 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient6 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_20.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient7 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_22.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient8 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_23.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient9 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_26.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient10 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_28.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient11 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_34.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient12 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_37.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient13 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_38.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient14 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_40.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient15 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gradient16 {
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;    
+}
+
 /* ================================== Sections ================================== */
 
 .main-container {
