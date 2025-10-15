@@ -70,8 +70,8 @@ LETTER SPACING
     --font-family-sec: 'Teko', sans-serif;
 
     /* colors */
-    --primary-base: #D7263D; /* 970B2D / D7263D */
-    --secondary-base: #02182B;
+    --primary-base: #02182B; /* 970B2D / D7263D */
+    --secondary-base: #D7263D;
     --tertiary-base: #FFFFE7;
     --white-shades-seashell: #FFF5EE;
     --white-shades-heat: #FDF9EF;
@@ -90,9 +90,9 @@ LETTER SPACING
 }
 
 .darkmode {
-    --primary-base: #02182B; /* 970B2D / D7263D */
-    --secondary-base: #D7263D;
-    --tertiary-base: #FFFFE7;
+    --primary-base: rgba(215, 38, 61, 0.027); /* 970B2D / D7263D (using this)-> rgba(215, 38, 61, 0.027) */
+    --secondary-base: rgba(2, 24, 43, 0.027); /* #02182B using this */
+    --tertiary-base: #ffffe7cc; /* #FFFFE7 using this */
 }
 
 html {
@@ -102,7 +102,12 @@ html {
 body {
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-normal);
-    background-color: var(--primary-base);
+    /* background-color: var(--primary-base); */
+    background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1, h2, h3, h4 {
@@ -163,13 +168,21 @@ a {
 .content-wrapper {
     max-width: 700px;
     /* background-color: white; */
+    background-color: var(--primary-base);
     width: 100%;
     /* height: 100vh; */
-    margin: 0 auto;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px; 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
 }
 
 .head-wrapper {
@@ -219,15 +232,15 @@ a {
     fill: var(--secondary-base);
 }
 
-#theme-switch img:last-child {
+#theme-switch img:first-child {  /* last child was changed to first */
     display: none;
 }
 
-.darkmode #theme-switch img:first-child {
+.darkmode #theme-switch img:last-child { /* first child was changed to last */
     display: none;
 }
 
-.darkmode #theme-switch img:last-child {
+.darkmode #theme-switch img:first-child { /* last child was changed to first */
     display: block;
 }
 
@@ -266,7 +279,8 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: var(--secondary-base);
+    /* color: var(--secondary-base); */
+    color: var(--tertiary-base);
 }
 
 .content-wrapper .link-wrapper {
@@ -318,7 +332,8 @@ a {
     width: 100%;
     padding: 2rem;
     background-color: var(--secondary-base);
-    border: 2px solid var(--secondary-base);
+    /* border: 2px solid var(--secondary-base); */
+    border: 1px solid var(--tertiary-base);
     border-radius: 20px;
     color: var(--tertiary-base);
 }
