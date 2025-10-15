@@ -103,12 +103,12 @@ body {
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-normal);
     /* background-color: var(--primary-base); */
-    /* background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg");
+    background-image: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center; */
-    transition: background 1s ease-in-out;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
 }
 
 h1, h2, h3, h4 {
@@ -159,7 +159,7 @@ a {
 
 /* ================================== Components ================================== */
 
-.gradient1 {
+/* .gradient1 {
     background: url("./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,7 +285,7 @@ a {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;    
-}
+} */
 
 /* ================================== Sections ================================== */
 

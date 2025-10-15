@@ -22,22 +22,76 @@ themeSwitch.addEventListener("click", () => {
 
 
 //background change function
-//this develops a white colour flicker for every grad change due to class changes so new js code just below this code
+//this develops a white colour flicker for every grad change due to class changes so 2 new js code just below this code
 
-const gradients = ["gradient1", "gradient2", "gradient3", "gradient4", "gradient5", "gradient6", "gradient7", "gradient8", "gradient9", "gradient10", "gradient11", "gradient12", "gradient13", "gradient14", "gradient15", "gradient16"];
+// const gradients = ["gradient1", "gradient2", "gradient3", "gradient4", "gradient5", "gradient6", "gradient7", "gradient8", "gradient9", "gradient10", "gradient11", "gradient12", "gradient13", "gradient14", "gradient15", "gradient16"];
+// let index = 0;
+
+// setInterval(() => {
+//     //remove current gradient
+//     document.body.classList.remove(gradients[index]);
+
+//     //move to the next one
+//     index = (index + 1) % gradients.length;
+
+//     //add the new grad
+//     document.body.classList.add(gradients[index]);
+// }, 5000);
+
+//new code for above, fix the errors 
+// const gradients = ["gradient1", "gradient2", "gradient3", "gradient4", "gradient5", "gradient6", "gradient7", "gradient8", "gradient9", "gradient10", "gradient11", "gradient12", "gradient13", "gradient14", "gradient15", "gradient16"];
+// let current = 0;
+
+// setInterval(() => {
+//     const next = (current + 1) % gradients.length;
+
+//     //adding next gradient first
+//     document.body.classList.add(gradients[next]);
+
+//     //wait for css transitions to complete, then remove old grad
+//     setTimeout(() => {
+//         document.body.classList.remove(gradients[current]);
+//         current = next;
+//     }, 1000); //to match the transition time (1s)
+// }, 5000); //5s 
+
+//new 2nd code
+const backgrounds = [
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_3.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_9.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_10.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_15.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_20.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_22.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_23.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_26.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_28.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_34.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_37.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_38.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_40.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_4.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_5.jpg')"
+];
+
+//preload images
+const preload = () => {
+    backgrounds.forEach(bg => {
+        const img = new Image();
+        //extract url between brackets
+
+        img.src = bg.slice(4, -1).replace(/['"]/g, "");
+    });
+};
+
+preload();
+
 let index = 0;
 
 setInterval(() => {
-    //remove current gradient
-    document.body.classList.remove(gradients[index]);
-
-    //move to the next one
-    index = (index + 1) % gradients.length;
-
-    //add the new grad
-    document.body.classList.add(gradients[index]);
+    index = (index + 1) % backgrounds.length;
+    document.body.style.backgroundImage = backgrounds[index];
 }, 5000);
-
-//new code for above, fix the errors 
 
 //animation functions
