@@ -182,8 +182,8 @@ a {
  */
 
 .scale-in-center {
-	-webkit-animation: scale-in-center 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
-	        animation: scale-in-center 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+	-webkit-animation: scale-in-center 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+	        animation: scale-in-center 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
 }
 
 @-webkit-keyframes scale-in-center {
@@ -212,8 +212,8 @@ a {
 }
 
 .focus-in-expand-fwd {
-	-webkit-animation: focus-in-expand-fwd 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
-	        animation: focus-in-expand-fwd 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+	-webkit-animation: focus-in-expand-fwd 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+	        animation: focus-in-expand-fwd 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
 }
 /**
  * ----------------------------------------
