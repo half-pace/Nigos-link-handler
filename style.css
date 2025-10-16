@@ -356,6 +356,11 @@ a {
 
 #theme-switch img {
     fill: var(--secondary-base);
+    transition: transform 0.4s ease-in-out;
+}
+
+#theme-switch:hover img {
+    transform: rotate(360deg);
 }
 
 #theme-switch img:first-child {  /* last child was changed to first */
