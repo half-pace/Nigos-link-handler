@@ -22,21 +22,6 @@ themeSwitch.addEventListener("click", () => {
 
 
 //background change function
-//this develops a white colour flicker for every grad change due to class changes so 2 new js code just below this code
-
-// const gradients = ["gradient1", "gradient2", "gradient3", "gradient4", "gradient5", "gradient6", "gradient7", "gradient8", "gradient9", "gradient10", "gradient11", "gradient12", "gradient13", "gradient14", "gradient15", "gradient16"];
-// let index = 0;
-
-// setInterval(() => {
-//     //remove current gradient
-//     document.body.classList.remove(gradients[index]);
-
-//     //move to the next one
-//     index = (index + 1) % gradients.length;
-
-//     //add the new grad
-//     document.body.classList.add(gradients[index]);
-// }, 5000);
 
 //new code for above, fix the errors 
 // const gradients = ["gradient1", "gradient2", "gradient3", "gradient4", "gradient5", "gradient6", "gradient7", "gradient8", "gradient9", "gradient10", "gradient11", "gradient12", "gradient13", "gradient14", "gradient15", "gradient16"];
@@ -76,22 +61,37 @@ const backgrounds = [
 ];
 
 //preload images
-const preload = () => {
-    backgrounds.forEach(bg => {
-        const img = new Image();
-        //extract url between brackets
+// const preload = () => {
+//     backgrounds.forEach(bg => {
+//         const img = new Image();
+//         //extract url between brackets
 
-        img.src = bg.slice(4, -1).replace(/['"]/g, "");
-    });
-};
+//         img.src = bg.slice(4, -1).replace(/['"]/g, "");
+//     });
+// };
 
-preload();
+// preload();
 
-let index = 0;
+let current = parseInt(localStorage.getItem("bgIndex")) || 0; //to load saved index from localStorage or to default back to 0
 
-setInterval(() => {
-    index = (index + 1) % backgrounds.length;
-    document.body.style.backgroundImage = backgrounds[index];
-}, 5000);
+backgrounds.forEach(bg => {
+    const img = new Image();
+    img.src = bg.slice(4, -1).replace(/['"]/g, "");
+});
+
+document.body.style.backgroundImage = backgrounds[current]; //apply saved background on load
+
+const button = document.getElementById("grad-switch");
+
+button.addEventListener("click", () => {
+    current = (current + 1) % backgrounds.length;
+    document.body.style.backgroundImage = backgrounds[current];
+    localStorage.setItem("bgIndex", current); //save index
+});
+
+// setInterval(() => {
+//     index = (index + 1) % backgrounds.length;
+//     document.body.style.backgroundImage = backgrounds[index];
+// }, 5000);
 
 //animation functions
