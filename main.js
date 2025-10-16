@@ -42,11 +42,7 @@ themeSwitch.addEventListener("click", () => {
 
 //new 2nd code
 const backgrounds = [
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_3.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_9.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_10.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_15.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_20.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_22.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_23.jpg')",
@@ -56,6 +52,10 @@ const backgrounds = [
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_37.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_38.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_40.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_9.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_10.jpg')",
+    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_15.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_4.jpg')",
     "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_5.jpg')"
 ];
