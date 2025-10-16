@@ -95,8 +95,8 @@ let current = parseInt(localStorage.getItem("bgIndex")) || 0; //to load saved in
 
 backgrounds.forEach(bg => {
     const img = new Image();
-    // img.src = bg.slice(4, -1).replace(/['"]/g, "");
-    img.src = url;
+    img.src = bg.slice(4, -1).replace(/['"]/g, "");
+    // img.src = url;
 });
 
 // document.body.style.backgroundImage = backgrounds[current]; //apply saved background on load
