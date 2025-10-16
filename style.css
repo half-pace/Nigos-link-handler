@@ -39,6 +39,11 @@ LETTER SPACING
 ================== Border Radius ==================
 4px / 8px / 20px
 
+================== Break points ==================
+Mobile: 320px to 600px
+Tabs: 600px to 1024px
+Laps: 1024px to 1440px 
+
 */
 
 /* ================================== Global Styles ================================== */
