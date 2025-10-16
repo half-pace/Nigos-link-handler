@@ -42,22 +42,23 @@ themeSwitch.addEventListener("click", () => {
 
 //new 2nd code
 const backgrounds = [
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_3.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_20.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_22.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_23.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_26.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_28.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_34.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_37.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_38.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_40.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_1.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_9.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_10.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_15.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_4.jpg')",
-    "url('./assets/moody-gradients-texture-assets-vol1_NjhlZTlmNzBmNjY0NzQwMDMzNWYyYTNk/moody-gradient_5.jpg')"
+    "url('./assets/Gradients/4.png')",
+    "url('./assets/Gradients/5.png')",
+    "url('./assets/Gradients/6.png')",
+    "url('./assets/Gradients/7.png')",
+    "url('./assets/Gradients/8.png')",
+    "url('./assets/Gradients/9.png')",
+    "url('./assets/Gradients/10.png')",
+    "url('./assets/Gradients/11.png')",
+    "url('./assets/Gradients/12.png')",
+    "url('./assets/Gradients/13.png')",
+    "url('./assets/Gradients/14.png')",
+    "url('./assets/Gradients/15.png')",
+    "url('./assets/Gradients/16.png')",
+    "url('./assets/Gradients/17.png')",
+    "url('./assets/Gradients/18.png')",
+    "url('./assets/Gradients/19.png')",
+    "url('./assets/Gradients/20.png')"
 ];
 
 //preload images
